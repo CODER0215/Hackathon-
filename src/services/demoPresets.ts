@@ -1,0 +1,127 @@
+import { ScanPreset } from '../types/threat';
+
+export const DEMO_PRESETS: ScanPreset[] = [
+  {
+    id: 'demo-kyc',
+    name: 'Fake Bank KYC Alert',
+    category: 'BANK_KYC_SCAM',
+    scanType: 'message',
+    description: 'Deceptive SMS threatening immediate bank account suspension.',
+    tag: 'High Urgency',
+    content:
+      'URGENT! Your SBI bank account will be blocked today due to pending KYC verification. Click http://sbi-online-kyc.top/verify-login immediately to update PAN and prevent suspension.',
+    language: 'en',
+    campaignId: 'camp-sbi-kyc',
+  },
+  {
+    id: 'demo-upi',
+    name: 'UPI / Reward Cashback Fraud',
+    category: 'UPI_SCAM',
+    scanType: 'message',
+    description: 'Advance-fee trick requiring small payment to claim ₹50,000.',
+    tag: 'Financial Trap',
+    content:
+      'Congratulations! You have been selected for a ₹50,000 festive reward from PhonePe cashback. Pay ₹499 processing fee via UPI or enter your UPI PIN to claim: https://phonepe-reward-claim.xyz/cashback',
+    language: 'en',
+    campaignId: 'camp-phonepe-cashback',
+  },
+  {
+    id: 'demo-internship',
+    name: 'Fake Tech Internship Offer',
+    category: 'JOB_INTERNSHIP_SCAM',
+    scanType: 'message',
+    description: 'Bogus remote software internship demanding upfront document fee.',
+    tag: 'Student Target',
+    content:
+      'Congratulations! You have been shortlisted for Remote Software Developer Internship (Stipend ₹25,000/mo). Pay ₹799 mandatory background certificate fee within 12 hours at https://internship-onboarding.xyz/pay to reserve your offer letter.',
+    language: 'en',
+  },
+  {
+    id: 'demo-scholarship',
+    name: 'Fake National Scholarship Grant',
+    category: 'SCHOLARSHIP_SCAM',
+    scanType: 'message',
+    description: 'Phishing scheme targeting college students with fictitious scholarship funds.',
+    tag: 'Scholarship Phish',
+    content:
+      'Govt Education Grant: Your National Merit Scholarship of ₹45,000 has been sanctioned for semester 2026. Submit your Aadhaar card and netbanking credentials immediately to disburse funds: http://national-scholarship-portal.live/claim',
+    language: 'en',
+  },
+  {
+    id: 'demo-phishing-url',
+    name: 'Spoofed Banking Login URL',
+    category: 'PHISHING',
+    scanType: 'url',
+    description: 'Lookalike domain impersonating authentic banking authentication.',
+    tag: 'Lookalike URL',
+    content: 'https://secure-login.bank.example.xyz/verify?user_session=8812',
+    language: 'en',
+  },
+  {
+    id: 'demo-courier',
+    name: 'Fake India Post Delivery',
+    category: 'COURIER_DELIVERY_SCAM',
+    scanType: 'message',
+    description: 'Rescheduling fee phishing trick targeting online deliveries.',
+    tag: 'Parcel Phishing',
+    content:
+      'India Post Alert: Your parcel #IN9823101 delivery has failed due to incorrect postal address. Pay ₹25 rescheduling fee within 24 hours at http://indiapost-redelivery.buzz/track to avoid return.',
+    language: 'en',
+    campaignId: 'camp-indiapost-cvv',
+  },
+  {
+    id: 'demo-safe-seminar',
+    name: 'Legitimate College Seminar',
+    category: 'LEGITIMATE',
+    scanType: 'message',
+    description: 'Authentic academic circular with trusted domain and no pressure.',
+    tag: 'Verified Safe',
+    content:
+      'Dear Students, The Department of Computer Science cordially invites you to the Annual Cybersecurity Symposium tomorrow at 10:00 AM in the Main Auditorium. Attendance is mandatory for all final year students. View schedule at https://iitb.ac.in/events/cybersecurity-seminar',
+    language: 'en',
+  },
+  {
+    id: 'demo-homoglyph-url',
+    name: 'Unicode Lookalike Homoglyph URL',
+    category: 'HOMOGLYPH_SPOOF',
+    scanType: 'url',
+    description: 'Visually deceptive domain swapping Latin l with capital I (paypaI.example).',
+    tag: 'Homoglyph Spoof',
+    content: 'https://paypaI.example.com/signin?auth_prompt=true',
+    language: 'en',
+  },
+  {
+    id: 'demo-job',
+    name: 'Part-Time Telegram Task Scheme',
+    category: 'JOB_INTERNSHIP_SCAM',
+    scanType: 'message',
+    description: 'Pyramid task scam promising ₹3,500/day for liking videos.',
+    tag: 'Task Scheme',
+    content:
+      'Exclusive Part-Time Opportunity: Earn ₹3,500 to ₹5,000 per day by just liking YouTube videos from home. Join Telegram channel @india_daily_tasks and deposit ₹500 refundable security deposit.',
+    language: 'en',
+    campaignId: 'camp-telegram-task',
+  },
+  {
+    id: 'demo-digital-arrest',
+    name: 'Digital Arrest Threat',
+    category: 'DIGITAL_ARREST',
+    scanType: 'message',
+    description: 'Coercive extortion impersonating CBI and narcotics police.',
+    tag: 'Severe Coercion',
+    content:
+      'OFFICIAL WARNING: You have been placed under DIGITAL ARREST by CBI Cyber Crime Investigation Bureau. A parcel containing illicit narcotics was intercepted with your Aadhaar ID. Remain on WhatsApp/Skype video call immediately or police will arrive within 2 hours.',
+    language: 'en',
+  },
+  {
+    id: 'demo-gujarati-kyc',
+    name: 'Gujarati Bank KYC Scam',
+    category: 'BANK_KYC_SCAM',
+    scanType: 'message',
+    description: 'Localized regional scam message targeting Gujarati speakers.',
+    tag: 'ગુજરાતી Alert',
+    content:
+      'તમારું KYC આજે પૂર્ણ નહીં કરો તો તમારું બેંક એકાઉન્ટ બંધ થઈ જશે. નીચેની લિંક પર ક્લિક કરી તુરંત તમારું પાન કાર્ડ અને ઓટીપી વેરીફાય કરો: http://bank-kyc-gujarat.online/verify',
+    language: 'gu',
+  },
+];

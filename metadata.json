@@ -1,0 +1,6 @@
+{
+  "name": "SentinelAI – Private AI Threat Shield",
+  "description": "Privacy-first personal cybersecurity threat shield detecting phishing URLs, scam messages, UPI frauds, and social engineering attacks with on-device heuristics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
